@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./CSS/Posts.css";
 import Skeleton from "../Skeleton/Skeleton";
+import Glow from "../Skeleton/Glow/Glow";
 
 function Posts() {
   const [posts, setPosts] = useState(null);
@@ -29,11 +30,14 @@ function Posts() {
 
       {!posts &&
         [...Array(5)].map((x, i) => (
-          <div key={i} className="postskel">
-            <Skeleton type="title" />
-            <Skeleton type="text" />
-            <Skeleton type="text" />
-            <Skeleton type="text" />
+          <div className="wrapper">
+            <div key={i} className="postsskel">
+              <Skeleton type="title" />
+              <Skeleton type="text" />
+              <Skeleton type="text" />
+              <Skeleton type="text" />
+            </div>
+            <Glow />
           </div>
         ))}
     </div>

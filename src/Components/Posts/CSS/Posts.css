@@ -17,8 +17,15 @@
   margin-bottom: 5px;
 }
 
-.posts .postskel {
+.posts .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.posts .wrapper .postsskel {
   margin: 20px auto;
-  padding: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f2f2f2;
 }
 /*# sourceMappingURL=Posts.css.map */

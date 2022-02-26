@@ -30,5 +30,10 @@
   }
   .authorskel {
     @include gridAuthor;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f2f2f2;
   }
 }

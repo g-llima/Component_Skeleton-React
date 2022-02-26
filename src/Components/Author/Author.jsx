@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./CSS/Author.css";
 import Skeleton from "../Skeleton/Skeleton";
+import Glow from "../Skeleton/Glow/Glow";
 
 function Author() {
   const [profile, setProfile] = useState(null);
@@ -44,6 +45,7 @@ function Author() {
             <Skeleton type="text" />
             <Skeleton type="text" />
           </div>
+          <Glow />
         </div>
       )}
     </div>
