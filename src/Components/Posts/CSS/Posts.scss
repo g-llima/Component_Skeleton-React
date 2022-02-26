@@ -1,0 +1,15 @@
+.posts {
+  color: #222;
+  h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .post {
+    margin: 1.5rem 0;
+
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+  }
+}

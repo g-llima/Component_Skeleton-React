@@ -1,0 +1,14 @@
+.author h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  color: #222;
+}
+
+.author .profile {
+  margin-top: 10px;
+}
+
+.author .profile p {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=Author.css.map */

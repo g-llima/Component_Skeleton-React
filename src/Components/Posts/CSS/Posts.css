@@ -1,0 +1,18 @@
+.posts {
+  color: #222;
+}
+
+.posts h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.posts .post {
+  margin: 1.5rem 0;
+}
+
+.posts .post h3 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=Posts.css.map */
