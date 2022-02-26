@@ -6,10 +6,15 @@
   }
   .post {
     margin: 1.5rem 0;
+    padding: 10px 0;
 
     h3 {
       text-transform: capitalize;
       margin-bottom: 5px;
     }
+  }
+  .postskel {
+    margin: 20px auto;
+    padding: 10px 0;
   }
 }

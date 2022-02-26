@@ -1,3 +1,10 @@
+@mixin gridAuthor {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+
 .author {
   h2 {
     padding-bottom: 10px;
@@ -5,10 +12,23 @@
     color: #222;
   }
   .profile {
+    @include gridAuthor;
     margin-top: 10px;
+
+    .imgwrapper {
+      width: 100px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
 
     p {
       margin: 10px 0;
     }
+  }
+  .authorskel {
+    @include gridAuthor;
   }
 }

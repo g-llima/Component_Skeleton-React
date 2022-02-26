@@ -9,10 +9,16 @@
 
 .posts .post {
   margin: 1.5rem 0;
+  padding: 10px 0;
 }
 
 .posts .post h3 {
   text-transform: capitalize;
   margin-bottom: 5px;
+}
+
+.posts .postskel {
+  margin: 20px auto;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=Posts.css.map */

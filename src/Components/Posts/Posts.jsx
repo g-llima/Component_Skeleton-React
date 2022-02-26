@@ -19,11 +19,6 @@ function Posts() {
     <div className="posts">
       <h2>Posts</h2>
 
-      <Skeleton type="title" />
-      <Skeleton type="text" />
-      <Skeleton type="avatar" />
-      <Skeleton type="thumbnail" />
-
       {posts &&
         posts.map((post) => (
           <article className="post" key={post.id}>
@@ -32,7 +27,15 @@ function Posts() {
           </article>
         ))}
 
-      {!posts && <div>loading...</div>}
+      {!posts &&
+        [...Array(5)].map((x, i) => (
+          <div key={i} className="postskel">
+            <Skeleton type="title" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
+          </div>
+        ))}
     </div>
   );
 }

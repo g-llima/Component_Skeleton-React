@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import "./CSS/Author.css";
+import Skeleton from "../Skeleton/Skeleton";
 
 function Author() {
   const [profile, setProfile] = useState(null);
 
   useEffect(() => {
     setTimeout(async () => {
-      const res = await fetch("https://jsonplaceholder.typicode.com/users/2");
+      const res = await fetch("https://jsonplaceholder.typicode.com/users/6");
       const data = await res.json();
       setProfile(data);
     }, 5000);
@@ -19,13 +20,32 @@ function Author() {
 
       {profile && (
         <div className="profile">
-          <h3>{profile.username}</h3>
-          <p>{profile.email}</p>
-          <a href={profile.website}>{profile.website}</a>
+          <div className="imgwrapper">
+            <img
+              src="https://randomuser.me/api/portraits/men/36.jpg"
+              alt={profile.username}
+            />
+          </div>
+          <div>
+            <h3>{profile.username}</h3>
+            <p>{profile.email}</p>
+            <a href={profile.website}>{profile.website}</a>
+          </div>
         </div>
       )}
 
-      {!profile && <div>loading...</div>}
+      {!profile && (
+        <div className="authorskel">
+          <div>
+            <Skeleton type="avatar" />
+          </div>
+          <div>
+            <Skeleton type="title" />
+            <Skeleton type="text" />
+            <Skeleton type="text" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
