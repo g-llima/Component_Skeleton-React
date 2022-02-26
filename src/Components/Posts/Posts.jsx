@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./CSS/Posts.css";
+import Skeleton from "../Skeleton/Skeleton";
 
 function Posts() {
   const [posts, setPosts] = useState(null);
@@ -17,6 +18,11 @@ function Posts() {
   return (
     <div className="posts">
       <h2>Posts</h2>
+
+      <Skeleton type="title" />
+      <Skeleton type="text" />
+      <Skeleton type="avatar" />
+      <Skeleton type="thumbnail" />
 
       {posts &&
         posts.map((post) => (
